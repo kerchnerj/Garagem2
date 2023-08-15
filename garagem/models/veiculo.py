@@ -2,7 +2,7 @@ from django.db import models
 from garagem.models import Categoria, Marca, Cor, Acessorio
 from uploader.models import Image
 
-class Veiculo(models.Model):
+# class Veiculo(models.Model):
     imagem = models.ForeignKey(
         Image,
         related_name="+",

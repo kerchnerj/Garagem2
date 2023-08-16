@@ -12,13 +12,14 @@ from drf_spectacular.views import (
 )
 
 from garagem.views import (AcessorioViewSet, CategoriaViewSet, CorViewSet,
-                           MarcaViewSet, VeiculoViewSet)
+                           MarcaViewSet, VeiculoViewSet, ModeloViewSet)
 
 router = DefaultRouter()
 router.register(r"acessorios", AcessorioViewSet)
 router.register(r"categorias", CategoriaViewSet)
 router.register(r"cors", CorViewSet)
 router.register(r"marcas", MarcaViewSet)
+router.register(r"modelo", ModeloViewSet)
 router.register(r"veiculos", VeiculoViewSet)
 
 urlpatterns = [

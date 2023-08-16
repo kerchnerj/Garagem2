@@ -11,4 +11,4 @@ class Modelo(models.Model):
         return self.nome
 
     class Meta:
-        verbose_name_plural = "nome"
+        verbose_name_plural = "modelo"

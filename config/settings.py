@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "uploader",
     "drf_spectacular",
+    "django_extensions",
 ]
 
 MIDDLEWARE = [
@@ -141,7 +142,6 @@ MEDIA_ENDPOINT = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
 FILE_UPLOAD_PERMISSIONS = 0o640
 
-     
 
 SPECTACULAR_SETTINGS = {
     "TITLE": "Garagem API",

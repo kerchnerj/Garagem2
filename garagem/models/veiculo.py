@@ -4,13 +4,9 @@ from uploader.models import Image
 
 
 class Veiculo(models.Model):
-    imagem = models.ForeignKey(
+    imagem = models.ManyToManyField(
         Image,
         related_name="+",
-        on_delete=models.CASCADE,
-        null=True,
-        blank=True,
-        default=None,
     )
     modelo = models.CharField(max_length=100)
     cor = models.ForeignKey(Cor, on_delete=models.PROTECT, related_name="veiculos")

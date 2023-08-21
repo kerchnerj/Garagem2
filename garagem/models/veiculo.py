@@ -8,7 +8,6 @@ class Veiculo(models.Model):
         Image,
         related_name="+",
     )
-    modelo = models.CharField(max_length=100)
     cor = models.ForeignKey(Cor, on_delete=models.PROTECT, related_name="veiculos")
     ano = models.IntegerField(null=True, default=0)
     modelo = models.ForeignKey(
